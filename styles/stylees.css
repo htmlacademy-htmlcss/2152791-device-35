@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/raleway-800.woff2) format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/rubik-400.woff2) format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/rubik-400.woff2) format('woff2');
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #444444;
+}
+
+.header-upper-container {
+  background-color: #FFE17F;
+}
+
+.field {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 30%;
+}
+
+.search-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.login-button {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.compare-button {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.basket-button {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.header-lower-container {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.slider-description-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.detail-button {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.range-metre {
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.range {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.categories-list {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.opportunities-list {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.opportunities-item-added {
+  color: #FFE17F;
+}
+
+.opportunities-description-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.delivery-description {
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.about-us-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.about-us-list {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.more-about-us-button {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.contacts-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.shop-device {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.shop-time {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contact-us-button {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.subscribe-button {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.page-footer {
+ background-color: #444444;
+}
+
+.footer-adress-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.footer-menu {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.footer-number {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
