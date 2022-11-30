@@ -71,6 +71,16 @@ body {
   line-height: 21px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 3px;
+}
+
+.catalog-toggler-title {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header-menu-list {
+  list-style: none;
 }
 
 .slider-description-title {
@@ -87,6 +97,7 @@ body {
   line-height: 21px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 3px;
 }
 
 .range-metre {
@@ -106,6 +117,7 @@ body {
   line-height: 24px;
   font-weight: 800;
   color: #000000;
+  list-style: none;
 }
 
 .opportunities-list {
@@ -114,6 +126,8 @@ body {
   line-height: 21px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 3px;
+  list-style: none;
 }
 
 .opportunities-item-added {
@@ -134,6 +148,7 @@ body {
   line-height: 23px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 3px;
 }
 
 .about-us-title {
@@ -149,6 +164,7 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+  list-style: none;
 }
 
 .more-about-us-button {
@@ -157,6 +173,7 @@ body {
   line-height: 21px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 3px;
 }
 
 .contacts-title {
@@ -185,6 +202,7 @@ body {
   line-height: 21px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 3px;
 }
 
 .subscribe-button {
@@ -193,6 +211,153 @@ body {
   line-height: 21px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 3px;
+}
+
+.login-button {
+  color: #000000;
+}
+
+.login-button-exit {
+  opacity: 30%;
+  color: #000000;
+}
+
+.inner-header-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.filter-title {
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.catalog-filter-item {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.show-button {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+.sort-title {
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+.option-button {
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.catalog-card-prise {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.download-more-button {
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-back-link {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  opacity: 30%;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #444444;
+}
+
+.pagination-link-one {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 60%;
+  text-decoration: none;
+  color: #444444;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 30%;
+  text-decoration: none;
+  color: #444444;
+}
+
+.pagination-forward-link {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
 }
 
 .page-footer {
@@ -211,6 +376,8 @@ body {
   line-height: 21px;
   font-weight: 800;
   color: #ffffff;
+  letter-spacing: 3px;
+  list-style: none;
 }
 
 .footer-number {
