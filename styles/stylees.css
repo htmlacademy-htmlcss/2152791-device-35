@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url(../fonts/raleway-800.woff2) format('woff2');
+  src: url(../fonts/raleway/raleway-800.woff2) format('woff2');
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/rubik-400.woff2) format('woff2');
+  src: url(../fonts/rubik/rubik-400.woff2) format('woff2');
   font-display: swap;
 }
 
@@ -18,8 +18,12 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/rubik-400.woff2) format('woff2');
+  src: url(../fonts/rubik/rubik-700.woff2) format('woff2');
   font-display: swap;
+}
+
+html {
+  height: 100%;
 }
 
 body {
@@ -29,16 +33,38 @@ body {
   font-weight: 400;
   background-color: #ffffff;
   color: #444444;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header {
+  background-color: #FFE17F;
+  min-height: 140px;
 }
 
 .header-upper-container {
-  background-color: #FFE17F;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-button-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .field {
   font-size: 16px;
   line-height: 20px;
   opacity: 30%;
+  margin-left: 60px;
+  margin-top: 46px;
 }
 
 .search-button {
@@ -51,18 +77,24 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  margin-left: 53px;
+  margin-top: 46px;
 }
 
 .compare-button {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  margin-top: 51px;
+  margin-right: 61px;
 }
 
 .basket-button {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  margin-top: 51px;
+  margin-right: 60px;
 }
 
 .header-lower-container {
@@ -72,15 +104,43 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-toggler-title {
   color: #000000;
   text-decoration: none;
+  margin-top: 45px;
+  margin-left: 60px;
 }
 
 .header-menu-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu-item {
+  margin-right: 55px;
+  margin-top: 50px;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-description-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-description-title {
@@ -100,6 +160,12 @@ body {
   letter-spacing: 3px;
 }
 
+.specifications {
+  display: grid;
+  grid-template-columns: 144px 144px;
+  gap: 20px;
+}
+
 .range-metre {
   font-size: 36px;
   line-height: 30px;
@@ -112,12 +178,22 @@ body {
 }
 
 .categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.categories-list {
   font-family: "Raleway";
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
   color: #000000;
   list-style: none;
+}
+
+.opportunities {
+  display: flex;
 }
 
 .opportunities-list {
@@ -128,10 +204,17 @@ body {
   color: #000000;
   letter-spacing: 3px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .opportunities-item-added {
   color: #FFE17F;
+}
+
+.opportunities-description-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .opportunities-description-title {
@@ -142,6 +225,11 @@ body {
   color: #000000;
 }
 
+.delivery-container {
+  display: flex;
+  justify-content: center;
+}
+
 .delivery-description {
   font-family: "Raleway";
   font-size: 20px;
@@ -149,6 +237,20 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+}
+
+.information {
+  display: flex;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us-title {
@@ -203,6 +305,27 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.text-subscribe-container {
+  display: flex;
+}
+
+.subscribe-form-container {
+  display: flex;
 }
 
 .subscribe-button {
@@ -364,6 +487,16 @@ body {
  background-color: #444444;
 }
 
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-adress-text {
   font-size: 16px;
   line-height: 20px;
@@ -378,6 +511,7 @@ body {
   color: #ffffff;
   letter-spacing: 3px;
   list-style: none;
+  display: flex;
 }
 
 .footer-number {

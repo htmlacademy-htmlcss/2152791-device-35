@@ -10,13 +10,17 @@
    <header class="page-header">
     <nav class="navigation">
       <div class="header-upper-container">
+      <div class="form-button-container">
         <form class="search-field" action="https://echo.htmlacademy.ru/" method="get">
           <input class="field" placeholder="Поиск по сайту" type="search" required>
           <button class="search-button" type="submit">Найти</button>
         </form>
         <button class="login-button">Войти</button>
+      </div>
+        <div class="nav-buttons-container">
         <button class="compare-button">Сравнить</button>
         <button class="basket-button">Корзина</button>
+      </div>
       </div>
       <div class="header-lower-container">
         <a class="catalog-toggler-title" href="catalog.html">Каталог товаров</a>
@@ -28,9 +32,10 @@
       </div>
     </nav>
    </header>
+   <main class="main-container">
    <section class="slider">
     <img src="images/main/slider-one.png" width="560" height="560" alt="Квадрокоптер">
-    <p class="numbers">01</p>
+    <div class="slider-container">
     <div class="slider-description-container">
       <h1 class="slider-description-title">Порхает как бабочка, жалит как пчела!</h1>
       <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -38,10 +43,11 @@
     </div>
     <div class="specifications">
       <span class="range-metre">800 м</span>
-      <p class="range">Дальность полета</p>
       <span class="range-metre">50 м</span>
+      <p class="range">Дальность полета</p>
       <p class="range">Радиус поражения</p>
     </div>
+  </div>
    </section>
    <section class="categories">
     <div class="categories-container">
@@ -126,24 +132,21 @@
       <p class="subscribe-form-text">Это бесплатно</p>
     </div>
    </section>
+  </main>
    <footer class="page-footer">
-    <div class="footer-adress-container">
+    <div class="footer-container">
       <p class="footer-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-    </div>
-    <div class="footer-menu-container">
       <ul class="footer-menu">
         <li class="footer-menu-item">Доставка</li>
         <li class="footer-menu-item">Гарантия</li>
         <li class="footer-menu-item">Контакты</li>
       </ul>
-    </div>
+        <p class="footer-number">Тел.: +7 (812) 812-12-12</p>
+      </div>
     <div class="footer-social-link-container">
       <a class="footer-social-link" href="https://t.me/htmlacademy"></a>
       <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru"></a>
       <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru"></a>
-    </div>
-    <div class="footer-number-container">
-      <p class="footer-number">Тел.: +7 (812) 812-12-12</p>
     </div>
    </footer>
   </body>
