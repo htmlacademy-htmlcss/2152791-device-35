@@ -43,9 +43,27 @@ body {
   flex-grow: 1;
 }
 
+.up {
+  height: 40px;
+  position: relative;
+}
+
+.device-logo {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 60px;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .page-header {
   background-color: #FFE17F;
-  min-height: 140px;
+  min-height: 300px;
 }
 
 .header-upper-container {
@@ -71,6 +89,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  background-color: #FFE17F;
 }
 
 .login-button {
@@ -79,6 +98,8 @@ body {
   color: #000000;
   margin-left: 53px;
   margin-top: 46px;
+  border: none;
+  background-color: #FFE17F;
 }
 
 .compare-button {
@@ -87,6 +108,8 @@ body {
   color: #000000;
   margin-top: 51px;
   margin-right: 61px;
+  border: none;
+  background-color: #FFE17F;
 }
 
 .basket-button {
@@ -95,6 +118,8 @@ body {
   color: #000000;
   margin-top: 51px;
   margin-right: 60px;
+  border: none;
+  background-color: #FFE17F;
 }
 
 .header-lower-container {
@@ -114,6 +139,7 @@ body {
   text-decoration: none;
   margin-top: 45px;
   margin-left: 60px;
+  text-transform: uppercase;
 }
 
 .header-menu-list {
@@ -122,6 +148,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .header-menu-item {
@@ -131,12 +158,16 @@ body {
 
 .slider {
   display: flex;
+  justify-content: space-between;
+  height: 400px;
 }
 
 .slider-container {
   display: flex;
   flex-direction: column;
+  width: 560px;
 }
+
 
 .slider-description-container {
   display: flex;
@@ -149,6 +180,32 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 60px;
+}
+
+.slider-description {
+  position: relative;
+  bottom: 40px;
+}
+
+.numbers {
+  font-size: 180px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 300px;
+  bottom: 75px;
+}
+
+.copter-img {
+  position: relative;
+  top: -150px;
 }
 
 .detail-button {
@@ -158,12 +215,17 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #FFFFFF;
+  width: 210px;
+  height: 20px;
+  margin-bottom: 60px;
 }
 
 .specifications {
   display: grid;
-  grid-template-columns: 144px 144px;
-  gap: 20px;
+  grid-template-columns: 160px 170px;
 }
 
 .range-metre {
@@ -175,25 +237,48 @@ body {
 .range {
   font-size: 16px;
   line-height: 30px;
+  margin-top: 12px;
+  margin-right: 20px;
 }
 
 .categories-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.categories-list {
   font-family: "Raleway";
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
   color: #000000;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-item {
+  margin: 0;
+  width: 160px;
+}
+
+.categories-text {
+  margin-top: 33px;
+}
+
+.square {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .opportunities {
   display: flex;
+  background-color: #F0F0F0;
+}
+
+.opportunities-container {
+  position: relative;
 }
 
 .opportunities-list {
@@ -206,15 +291,30 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
+  margin-top: 143px;
+  padding: 0;
+}
+
+.opportunities-item:not(:first-child) {
+  margin-top: 56px;
 }
 
 .opportunities-item-added {
   color: #FFE17F;
 }
 
+.opportunities-men {
+  position: absolute;
+  left: 900px;
+  bottom: 20px;
+}
+
 .opportunities-description-container {
   display: flex;
   flex-direction: column;
+  margin-left: 243px;
+  width: 448px;
 }
 
 .opportunities-description-title {
@@ -223,11 +323,23 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+  margin-top: 142px;
+}
+
+.opportunities-description {
+  margin-top: 34px;
 }
 
 .delivery-container {
   display: flex;
-  justify-content: center;
+  margin-top: 70px;
+  background-color:#F0F0F0;
+}
+
+.delivery-sqare {
+  background-color: #FFE17F;
+  width: 125px;
+  height: 100px;
 }
 
 .delivery-description {
@@ -237,10 +349,20 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+  text-transform: uppercase;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.delivery-car {
+  position: relative;
+  top: 35px;
+  left: 39px;
 }
 
 .information {
   display: flex;
+  margin-top: 70px;
 }
 
 .about-us-container {
@@ -251,6 +373,7 @@ body {
 .contacts-container {
   display: flex;
   flex-direction: column;
+  margin-left: 108px;
 }
 
 .about-us-title {
@@ -259,6 +382,16 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+  margin-top: 47px;
+  margin-bottom: 0;
+}
+
+.upper-description {
+  margin-top: 48px;
+}
+
+.lower-description {
+  margin-top: 30px;
 }
 
 .about-us-list {
@@ -267,6 +400,13 @@ body {
   font-weight: 700;
   color: #000000;
   list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.about-us-item:not(:first-child) {
+  margin-top: 19px;
 }
 
 .more-about-us-button {
@@ -276,6 +416,10 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  border: none;
+  background-color: #FFFFFF;
 }
 
 .contacts-title {
@@ -284,18 +428,47 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+  margin-top: 47px;
+  margin-bottom: 0;
 }
+
+.contacts-description {
+  margin-top: 48px;
+}
+
 
 .shop-device {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.shop-adress {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.shop-number {
+  margin: 0;
 }
 
 .shop-time {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: 30px;
+}
+
+.weekdays-time {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.weekends-time {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .contact-us-button {
@@ -305,6 +478,10 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  border: none;
+  background-color: #FFFFFF;
 }
 
 .subscribe {
@@ -335,6 +512,7 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .login-button {
@@ -358,11 +536,16 @@ body {
   font-size: 16px;
   line-height: 20px;
   list-style: none;
+  display: flex;
 }
 
 .breadcrumbs-link {
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-container {
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -398,6 +581,7 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .sort-title {
@@ -415,6 +599,9 @@ body {
 
 .catalog-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 40px;
 }
 
 .catalog-card-title {
@@ -440,10 +627,12 @@ body {
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .pagination-list {
   list-style: none;
+  display: flex;
 }
 
 .pagination-back-link {
@@ -455,6 +644,7 @@ body {
   letter-spacing: 3px;
   text-decoration: none;
   color: #444444;
+  text-transform: uppercase;
 }
 
 .pagination-link-one {
@@ -481,6 +671,7 @@ body {
   color: #000000;
   letter-spacing: 3px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .page-footer {
@@ -512,6 +703,7 @@ body {
   letter-spacing: 3px;
   list-style: none;
   display: flex;
+  text-transform: uppercase;
 }
 
 .footer-number {
