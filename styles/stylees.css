@@ -426,7 +426,13 @@ body {
   opacity: 30%;
 }
 
-.right-arrow-icon:focus {
+.arrow-button {
+  padding: 0;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.arrow-button:focus {
   border: 2px solid #AF4FFF;
 }
 
@@ -479,7 +485,6 @@ body {
   border-radius: 50%;
   border: 2px solid #000000;
   background-color: #FFFFFF;
-  margin-left: 20px;
 }
 
 .point-3 {
@@ -488,7 +493,29 @@ body {
   border-radius: 50%;
   border: 2px solid #000000;
   background-color: #FFFFFF;
+}
+
+.point-button {
+  padding: 0;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.point-button:not(:first-child) {
   margin-left: 20px;
+}
+
+.point-button:hover {
+  opacity: 60%;
+}
+
+.point-button:active {
+  opacity: 30%;
+}
+
+.point-button:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .numbers {
@@ -1276,6 +1303,7 @@ body {
 .breadcrumbs-link {
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .breadcrumbs-arrow {
@@ -1283,10 +1311,23 @@ body {
   margin-right: 16px;
 }
 
+.breadcrumbs-object:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-object:active {
+  opacity: 30%;
+}
+
+.breadcrumbs-object:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .control {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -1300,32 +1341,37 @@ body {
   cursor: pointer;
 }
 
-.control:hover .control-mark {
-  border-color: #000000;
-}
-
-.control:checked .control-mark {
-  border-color: #000000;
-}
-
-.control-input:disabled + .control-mark {
-  border-color: #CCCCCC;
-}
-
 .control-input:checked + .control-mark::before {
   position: absolute;
   content: "";
-  width: 8px;
-  height: 8px;
-  background-color: #000000;
-  top: 6px;
-  right: 6px;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  background: url(../images/catalog/Vector-tick.svg) no-repeat;
+}
+
+.control-input:checked + .control-mark {
+  border: 2px solid #000000;
+}
+
+.control:hover {
+  opacity: 60%;
+}
+
+.control:active {
+  opacity: 30%;
+}
+
+.control-input:focus-within {
+  outline: 2px solid #AF4FFF;
 }
 
 .control-bluetooth {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-mark-bluetooth {
@@ -1339,18 +1385,6 @@ body {
   cursor: pointer;
 }
 
-.control-bluetooth:hover .control-mark-bluetooth {
-  border-color: #000000;
-}
-
-.control-bluetooth:checked .control-mark-bluetooth {
-  border-color: pink;
-}
-
-.control-input-bluetooth:disabled + .control-mark-bluetooth {
-  border-color: #CCCCCC;
-}
-
 .control-input-bluetooth:checked + .control-mark-bluetooth::before {
   position: absolute;
   content: "";
@@ -1360,6 +1394,22 @@ body {
   background-color: #000000;
   top: 6px;
   right: 6px;
+}
+
+.control-input-bluetooth:checked + .control-mark-bluetooth {
+  border: 2px solid #000000;
+}
+
+.control-bluetooth:hover {
+  opacity: 60%;
+}
+
+.control-bluetooth:active {
+  opacity: 30%;
+}
+
+.control-input-bluetooth:focus-within {
+  outline: 2px solid #AF4FFF;
 }
 
 .catalog {
@@ -1574,17 +1624,34 @@ body {
   margin-top: 45px;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 .show-button::after {
   position: absolute;
   content: "";
-  width: 220px;
+  width: 210px;
   height: 8px;
   background-color: #FFE17F;
   bottom: 7px;
   left: 0;
   z-index: -1;
+}
+
+.show-button:hover::after {
+  display: none;
+}
+
+.show-button:hover {
+  background-color: #FFE17F;
+}
+
+.show-button:active {
+  background-color: #FFCC33;
+}
+
+.show-button:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .catalog-main {
@@ -1618,6 +1685,19 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #F0F0F0;
+  cursor: pointer;
+}
+
+.select-control:hover {
+  opacity: 60%;
+}
+
+.select-control:active {
+  opacity: 30%;
+}
+
+.select-control:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .sort-arrows {
@@ -1626,13 +1706,28 @@ body {
 }
 
 .sort-arrows-icon {
-  padding-top: 30px;
+  padding-left: 15px;
   margin-right: 20px;
   opacity: 30%;
 }
 
-.option-button {
-  color: #000000;
+.sort-arrows-icon:hover {
+  opacity: 60%;
+}
+
+.sort-arrows-icon:active {
+  opacity: 100%;
+}
+
+.sort-button {
+  padding: 0;
+  border: none;
+  background-color: #F0F0F0;
+  cursor: pointer;
+}
+
+.sort-button:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .catalog-card-description {
@@ -1667,6 +1762,18 @@ body {
   text-decoration: none;
 }
 
+.catalog-card-link:hover {
+  opacity: 60%;
+}
+
+.catalog-card-link:active {
+  opacity: 30%;
+}
+
+.catalog-card-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .download-more-button {
   font-family: "Raleway";
   font-size: 16px;
@@ -1680,6 +1787,19 @@ body {
   background-color: #FFFFFF;
   margin-left: 40px;
   margin-top: 26px;
+  cursor: pointer;
+}
+
+.download-more-button:hover {
+  border: 3px solid #000000;
+}
+
+.download-more-button:active {
+  opacity: 30%;
+}
+
+.download-more-button:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .pagination-container {
@@ -1708,6 +1828,20 @@ body {
   color: #444444;
   text-transform: uppercase;
   margin-right: 187px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.pagination-back-link:hover {
+  opacity: 100%;
+}
+
+.pagination-back-link:active {
+  opacity: 30%;
+}
+
+.pagination-back-link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .pagination-link-one {
@@ -1719,6 +1853,18 @@ body {
   margin-right: 30px;
 }
 
+.pagination-link-one:hover {
+  opacity: 100%;
+}
+
+.pagination-link-one:active {
+  opacity: 10%;
+}
+
+.pagination-link-one:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .pagination-link {
   font-size: 16px;
   line-height: 20px;
@@ -1726,6 +1872,18 @@ body {
   text-decoration: none;
   color: #444444;
   margin-right: 30px;
+}
+
+.pagination-link:hover {
+  opacity: 100%;
+}
+
+.pagination-link:active {
+  opacity: 10%;
+}
+
+.pagination-link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .pagination-forward-link {
@@ -1737,7 +1895,20 @@ body {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  margin-left: 152px;
+  margin-left: 152px;padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.pagination-forward-link:hover {
+  opacity: 60%;
+}
+
+.pagination-forward-link:active {
+  opacity: 30%;
+}
+
+.pagination-forward-link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .page-footer {
