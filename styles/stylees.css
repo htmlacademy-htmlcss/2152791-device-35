@@ -1543,7 +1543,7 @@ body {
   height: 10px;
   top: 5px;
   left: 5px;
-  background: url(../images/catalog/Vector-tick.svg) no-repeat;
+  background: url(../images/catalog/filter-tick.svg) no-repeat;
 }
 
 .control-input:checked + .control-mark {
