@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles/stylees.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="page-container">
       <div class="up">
+       <span class="visually-hidden">Логотип Девайс.</span>
        <a class="up-link" href="#"><svg class="device-logo" width="145" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.2 0v35.3h-7.6v-2.4a9.5 9.5 0 0 1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 6 1.2 7.5 3.1V0h7.6zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2zM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 12.8 13.3 0 1.1 0 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5zm4.6-9.1c-.8-2.9-3-4-5.4-4-2.9 0-4.8 1.4-5.5 4h11zM82.2 10.1l-9.4 25.2h-8.6L55 10.1h8.4l5.3 16 5.4-16h8.2zM83.5 10.1H91v25.2h-7.6V10.1zM93.7 22.7A13 13 0 0 1 107 9.4a13 13 0 0 1 11.4 6.5l-6.6 3.8c-1-1.8-2.7-2.8-5-2.8a5.5 5.5 0 0 0-5.6 5.8c0 3.5 2.4 5.8 5.7 5.8 2.2 0 4-1.1 4.9-2.8l6.6 3.8A12.8 12.8 0 0 1 107 36a13 13 0 0 1-13.4-13.3zM132.9 29.2c2 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3a13 13 0 0 1 13.4-13.3c7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-18c1 2.6 3.4 3.5 6.2 3.5zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-3 0-4.8 1.4-5.5 4h10.9z" fill="#000"/><path d="M83.5 0v10.1L91 0h-7.6z" fill="#510094"/></svg></a>
      </div>
       <header class="page-header-catalog">
@@ -31,6 +32,7 @@
          <div class="header-lower-container">
            <div class="catalog-menu-container">
              <button class="catalog-toggler-title-button">Каталог товаров</button>
+             <span class="visually-hidden">Всплывающее меню.</span>
              <a class="catalog-link" href="catalog.html"><div class="catalog-toggler-icon"></div></a>
            </div>
            <ul class="header-menu-list">
@@ -61,11 +63,12 @@
    <div class="catalog-container">
    <section class="catalog-filter">
     <div class="catalog-filter-container">
-      <h1 class="filter-title">Фильтр:</h1>
+      <h2 class="filter-title">Фильтр:</h2>
       <div class="range-price">
         <fieldset class="catalog-filter-container">
           <legend class="catalog-filter-title-priсe">Стоимость</legend>
           <div class="price-container">
+            <span class="visually-hidden">Настройка цены.</span>
             <div class="price-range-circus-one"></div>
             <div class="price-range-circus-two"></div>
             <div class="price-range-line-one"></div>
@@ -150,8 +153,8 @@
       <ul class="catalog-list">
         <li class="catalog-card">
           <a class="catalog-card-link" href="#">
-            <img src="images/catalog/product-one.png" width="360" height="380" alt="Любительская селфи-палка">
-            <button class="detail-card-button">Подробнее</button>
+            <img src="images/catalog/product-one.png" width="360" height="380" alt="Любительская селфи-палка.">
+            <a class="detail-card-link" href="#">Подробнее</a>
             <div class="catalog-card-description">
             <h3 class="catalog-card-title">Любительская селфи-палка</h3>
             <p class="catalog-card-prise">500 ₽</p>
@@ -160,8 +163,8 @@
         </li>
         <li class="catalog-card">
           <a class="catalog-card-link" href="#">
-            <img src="images/catalog/product-two.png" width="360" height="380" alt="Профессиональная селфи-палка">
-            <button class="detail-card-button">Подробнее</button>
+            <img src="images/catalog/product-two.png" width="360" height="380" alt="Профессиональная селфи-палка.">
+            <a class="detail-card-link" href="#">Подробнее</a>
             <div class="catalog-card-description">
             <h3 class="catalog-card-title">Профессиональная селфи-палка</h3>
             <p class="catalog-card-prise">1500 ₽</p>
@@ -170,8 +173,8 @@
         </li>
         <li class="catalog-card">
           <a class="catalog-card-link" href="#">
-            <img src="images/catalog/product-three.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <button class="detail-card-button">Подробнее</button>
+            <img src="images/catalog/product-three.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
+            <a class="detail-card-link" href="#">Подробнее</a>
             <div class="catalog-card-description">
             <h3 class="catalog-card-title">Непотопляемая селфи-палка</h3>
             <p class="catalog-card-prise">2500 ₽</p>
@@ -180,8 +183,8 @@
         </li>
         <li class="catalog-card">
           <a class="catalog-card-link" href="#">
-            <img src="images/catalog/product-four.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <button class="detail-card-button">Подробнее</button>
+            <img src="images/catalog/product-four.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
+            <a class="detail-card-link" href="#">Подробнее</a>
             <div class="catalog-card-description">
             <h3 class="catalog-card-title">Селфи-палка «Следуй за мной»</h3>
             <p class="catalog-card-prise">1500 ₽</p>
@@ -223,7 +226,7 @@
   <footer class="page-footer">
     <div class="footer-all">
     <div class="footer-container">
-      <a class="footer-logo-link" href="#"><svg class="footer-logo" width="145" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.2 0v35.3h-7.6v-2.4a9.5 9.5 0 0 1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 6 1.2 7.5 3.1V0h7.6zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2zM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 12.8 13.3 0 1.1 0 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5zm4.6-9.1c-.8-2.9-3-4-5.4-4-2.9 0-4.8 1.4-5.5 4h11zM82.2 10.1l-9.4 25.2h-8.6L55 10.1h8.4l5.3 16 5.4-16h8.2zM83.5 10.1H91v25.2h-7.6V10.1zM93.7 22.7A13 13 0 0 1 107 9.4a13 13 0 0 1 11.4 6.5l-6.6 3.8c-1-1.8-2.7-2.8-5-2.8a5.5 5.5 0 0 0-5.6 5.8c0 3.5 2.4 5.8 5.7 5.8 2.2 0 4-1.1 4.9-2.8l6.6 3.8A12.8 12.8 0 0 1 107 36a13 13 0 0 1-13.4-13.3zM132.9 29.2c2 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3a13 13 0 0 1 13.4-13.3c7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-18c1 2.6 3.4 3.5 6.2 3.5zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-3 0-4.8 1.4-5.5 4h10.9zM83.5 0v10.1L91 0h-7.6z" fill="#FFC700"/></svg></a>
+      <a class="footer-logo-link" href="#"><span class="visually-hidden">Логоти Девайс.</span><svg class="footer-logo" width="145" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.2 0v35.3h-7.6v-2.4a9.5 9.5 0 0 1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 6 1.2 7.5 3.1V0h7.6zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2zM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 12.8 13.3 0 1.1 0 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5zm4.6-9.1c-.8-2.9-3-4-5.4-4-2.9 0-4.8 1.4-5.5 4h11zM82.2 10.1l-9.4 25.2h-8.6L55 10.1h8.4l5.3 16 5.4-16h8.2zM83.5 10.1H91v25.2h-7.6V10.1zM93.7 22.7A13 13 0 0 1 107 9.4a13 13 0 0 1 11.4 6.5l-6.6 3.8c-1-1.8-2.7-2.8-5-2.8a5.5 5.5 0 0 0-5.6 5.8c0 3.5 2.4 5.8 5.7 5.8 2.2 0 4-1.1 4.9-2.8l6.6 3.8A12.8 12.8 0 0 1 107 36a13 13 0 0 1-13.4-13.3zM132.9 29.2c2 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3a13 13 0 0 1 13.4-13.3c7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-18c1 2.6 3.4 3.5 6.2 3.5zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-3 0-4.8 1.4-5.5 4h10.9zM83.5 0v10.1L91 0h-7.6z" fill="#FFC700"/></svg></a>
       <p class="footer-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <ul class="footer-menu">
         <li class="footer-menu-item"><button class="footer-menu-item-button">Доставка</button></li>
@@ -233,10 +236,10 @@
         <button class="footer-number-button">Тел.: +7 (812) 812-12-12</button>
       </div>
     <div class="footer-social-link-container">
-      <div class="link-container"><a class="footer-social-link" href="https://t.me/htmlacademy"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.4 0 .6 4.7c-.8.4-.8.8-.1 1l3 1 7-4.5c.4-.2.7 0 .4.2l-5.7 5-.2 3.2c.3 0 .5-.1.6-.3l1.5-1.4 3 2.2c.6.3 1 .2 1.2-.5l2-9.5c.2-.8-.3-1.2-.9-1Z" fill="#444"/></svg></a></div>
-      <div class="link-container"><a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.7 1.7-.5-.9a2 2 0 0 0-1-.5C13 0 8 0 8 0 6 0 3.8 0 1.7.3L.8.8a2 2 0 0 0-.5.9A19.4 19.4 0 0 0 .3 9l.5.8c.3.3.6.5 1 .5 1.2.4 6.2.4 6.2.4l6.3-.3.9-.5.5-.9a19 19 0 0 0 0-7.3Zm-9.3 6V3l4.2 2.2-4.2 2.3Z" fill="#444"/></svg></a></div>
-      <div class="link-container"><a class="footer-social-link" href="https://twitter.com/htmlacademy_ru"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.7.2c1.5-.5 2.6.3 3.2 1l1.7-.5a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.7 0 12.3c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.8.3 7 .4 5c.3.3.9.5 1.2.4C1 5.3-.2 2.4.8.9c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" fill="#444"/></svg></a></div>
-      <div class="link-container-icon"><a class="footer-social-link-icon" href="https://htmlacademy.ru"><svg class="footer-social-link-image" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 17.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" fill="#FFC700"/></svg></a></div>
+      <div class="link-container"><span class="visually-hidden">Ссылка на телеграм.</span><a class="footer-social-link" href="https://t.me/htmlacademy"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.4 0 .6 4.7c-.8.4-.8.8-.1 1l3 1 7-4.5c.4-.2.7 0 .4.2l-5.7 5-.2 3.2c.3 0 .5-.1.6-.3l1.5-1.4 3 2.2c.6.3 1 .2 1.2-.5l2-9.5c.2-.8-.3-1.2-.9-1Z" fill="#444"/></svg></a></div>
+      <div class="link-container"><span class="visually-hidden">Ссылка на ютуб.</span><a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.7 1.7-.5-.9a2 2 0 0 0-1-.5C13 0 8 0 8 0 6 0 3.8 0 1.7.3L.8.8a2 2 0 0 0-.5.9A19.4 19.4 0 0 0 .3 9l.5.8c.3.3.6.5 1 .5 1.2.4 6.2.4 6.2.4l6.3-.3.9-.5.5-.9a19 19 0 0 0 0-7.3Zm-9.3 6V3l4.2 2.2-4.2 2.3Z" fill="#444"/></svg></a></div>
+      <div class="link-container"><span class="visually-hidden">Ссылка на твиттер.</span><a class="footer-social-link" href="https://twitter.com/htmlacademy_ru"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.7.2c1.5-.5 2.6.3 3.2 1l1.7-.5a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.7 0 12.3c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.8.3 7 .4 5c.3.3.9.5 1.2.4C1 5.3-.2 2.4.8.9c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" fill="#444"/></svg></a></div>
+      <div class="link-container-icon"><span class="visually-hidden">Ссылка на сайт академии.</span><a class="footer-social-link-icon" href="https://htmlacademy.ru"><svg class="footer-social-link-image" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 17.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" fill="#FFC700"/></svg></a></div>
     </div>
     </div>
    </footer>
