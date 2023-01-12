@@ -20,18 +20,18 @@
              <input class="field" placeholder="Поиск по сайту" type="search" required>
              <button class="search-button" type="submit">Найти</button>
            </form>
-           <button class="login-button-catalog"><svg class="enter-icon-catalog" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" fill="#000"/></svg>Коля Петухов</button>
+           <button class="login-button-catalog" type="button"><svg class="enter-icon-catalog" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" fill="#000"/></svg>Коля Петухов</button>
          </div>
            <div class="nav-buttons-container">
-           <button class="exit-button">Выйти</button>
-           <button class="compare-button-catalog"><svg class="comapare-icon-catalog" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000"/></svg>Сравнить</button>
-           <button class="basket-button"><svg class="basket-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/></svg>Корзина</button>
+           <button class="exit-button" type="button">Выйти</button>
+           <button class="compare-button-catalog" type="button"><svg class="comapare-icon-catalog" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000"/></svg>Сравнить</button>
+           <button class="basket-button" type="button"><svg class="basket-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/></svg>Корзина</button>
            <div class="nav-two-icon">2</div>
          </div>
          </div>
          <div class="header-lower-container">
            <div class="catalog-menu-container">
-             <button class="catalog-toggler-title-button">Каталог товаров</button>
+             <button class="catalog-toggler-title-button" type="button">Каталог товаров</button>
              <span class="visually-hidden">Всплывающее меню.</span>
              <a class="catalog-link" href="catalog.html"><div class="catalog-toggler-icon"></div></a>
            </div>
@@ -51,7 +51,7 @@
       </li>
       <li class="breadcrumbs-item">
         <svg class="breadcrumbs-arrow" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3.8 3.6-3-3a.5.5 0 0 0-.7 0c-.1.2-.1.6 0 .8L2.7 4 .1 6.6v.7l.4.2.4-.1 3-3L4 4l-.2-.4Z" fill="#000"/></svg>
-        <a class="breadcrumbs-link">Каталог товаров</a>
+        <a class="breadcrumbs-link" href="#">Каталог товаров</a>
         <svg class="breadcrumbs-arrow" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3.8 3.6-3-3a.5.5 0 0 0-.7 0c-.1.2-.1.6 0 .8L2.7 4 .1 6.6v.7l.4.2.4-.1 3-3L4 4l-.2-.4Z" fill="#000"/></svg>
       </li>
       <li class="breadcrumbs-item">
@@ -136,7 +136,7 @@
         </li>
       </ul>
     </div>
-    <button class="show-button">Показать</button>
+    <button class="show-button" type="button">Показать</button>
    </section>
    <section class="catalog-main">
     <div class="sort-container">
@@ -145,8 +145,8 @@
         <option class="option-button" value="popular">Популярные</option>
       </select>
       <div class="sort-arrows">
-        <button class="sort-button-up"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 0 5.5 10H.5" fill="#000"/></svg></button>
-        <button class="sort-button-down"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/></svg></button>
+        <button class="sort-button-up" type="button"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 0 5.5 10H.5" fill="#000"/></svg></button>
+        <button class="sort-button-down" type="button"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/></svg></button>
       </div>
     </div>
     <div class="catalog-list-container">
@@ -193,7 +193,7 @@
         </li>
       </ul>
     </div>
-    <button class="download-more-button">Загрузить еще</button>
+    <button class="download-more-button" type="button">Загрузить еще</button>
     <div class="pagination-container">
       <ul class="pagination-list">
         <li class="pagination-item">
@@ -229,11 +229,11 @@
       <a class="footer-logo-link" href="#"><span class="visually-hidden">Логоти Девайс.</span><svg class="footer-logo" width="145" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.2 0v35.3h-7.6v-2.4a9.5 9.5 0 0 1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 6 1.2 7.5 3.1V0h7.6zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2zM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 12.8 13.3 0 1.1 0 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5zm4.6-9.1c-.8-2.9-3-4-5.4-4-2.9 0-4.8 1.4-5.5 4h11zM82.2 10.1l-9.4 25.2h-8.6L55 10.1h8.4l5.3 16 5.4-16h8.2zM83.5 10.1H91v25.2h-7.6V10.1zM93.7 22.7A13 13 0 0 1 107 9.4a13 13 0 0 1 11.4 6.5l-6.6 3.8c-1-1.8-2.7-2.8-5-2.8a5.5 5.5 0 0 0-5.6 5.8c0 3.5 2.4 5.8 5.7 5.8 2.2 0 4-1.1 4.9-2.8l6.6 3.8A12.8 12.8 0 0 1 107 36a13 13 0 0 1-13.4-13.3zM132.9 29.2c2 0 3.8-.8 4.8-1.9l6.1 3.5a13 13 0 0 1-11 5.2c-8.6 0-14-5.8-14-13.3a13 13 0 0 1 13.4-13.3c7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-18c1 2.6 3.4 3.5 6.2 3.5zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-3 0-4.8 1.4-5.5 4h10.9zM83.5 0v10.1L91 0h-7.6z" fill="#FFC700"/></svg></a>
       <p class="footer-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <ul class="footer-menu">
-        <li class="footer-menu-item"><button class="footer-menu-item-button">Доставка</button></li>
-        <li class="footer-menu-item"><button class="footer-menu-item-button">Гарантия</button></li>
-        <li class="footer-menu-item"><button class="footer-menu-item-button">Контакты</button></li>
+        <li class="footer-menu-item"><button class="footer-menu-item-button" type="button">Доставка</button></li>
+        <li class="footer-menu-item"><button class="footer-menu-item-button" type="button">Гарантия</button></li>
+        <li class="footer-menu-item"><button class="footer-menu-item-button" type="button">Контакты</button></li>
       </ul>
-        <button class="footer-number-button">Тел.: +7 (812) 812-12-12</button>
+        <button class="footer-number-button" type="button">Тел.: +7 (812) 812-12-12</button>
       </div>
     <div class="footer-social-link-container">
       <div class="link-container"><span class="visually-hidden">Ссылка на телеграм.</span><a class="footer-social-link" href="https://t.me/htmlacademy"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.4 0 .6 4.7c-.8.4-.8.8-.1 1l3 1 7-4.5c.4-.2.7 0 .4.2l-5.7 5-.2 3.2c.3 0 .5-.1.6-.3l1.5-1.4 3 2.2c.6.3 1 .2 1.2-.5l2-9.5c.2-.8-.3-1.2-.9-1Z" fill="#444"/></svg></a></div>
