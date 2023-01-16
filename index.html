@@ -17,8 +17,8 @@
       <div class="header-upper-container">
       <div class="form-button-container">
         <form class="search-field" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="field" placeholder="Поиск по сайту" type="search" required>
-          <button class="search-button" type="submit">Найти</button>
+          <label class="field-container" for="field-one"><input class="field" id="field-one" placeholder="Поиск по сайту" type="search" name="search-field" required></label>
+          <label class="search-button-container" for="search-one"><button class="search-button" id="search-one" type="submit">Найти</button></label>
         </form>
         <button class="login-button" type="button"><svg class="enter-icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" fill="#000"/></svg>Войти</button>
       </div>
@@ -26,7 +26,8 @@
         <button class="compare-button" type="button"><svg class="comapare-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000"/></svg>Сравнить</button>
         <button class="basket-button" type="button"><svg class="basket-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/></svg>Корзина</button>
         <div class="nav-two-icon">2</div>
-        <div class="popover visually-hidden">
+        <!--
+        <div class="popover">
          <div class="popover-product-container">
           <ul class="popover-product-list">
             <li class="popover-product-item"><img class="product-one-image" width="39" height="43" src="images/main/product-one-small.png" alt="Любительская селфи-палка."></li>
@@ -45,8 +46,9 @@
          </div>
          <button class="open-busket-button" type="button">Открыть корзину</button>
         </div>
-      </div>
-      </div>
+      -->
+        </div>
+        </div>
       <div class="header-lower-container">
         <div class="catalog-menu-container">
           <button class="catalog-toggler-title-button" type="button">Каталог товаров</button>
@@ -253,7 +255,7 @@
     </div>
     <div class="subscribe-form-container">
       <form class="subscribe-field" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="subscribe-place" placeholder="Ваш e-mail" type="email" required>
+        <input class="subscribe-place" placeholder="Ваш e-mail" type="email" name="subscribe-field" required>
         <button class="subscribe-button" type="submit">Подписаться</button>
       </form>
       <p class="subscribe-form-text"><svg class="subscribe-bird" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,7 +296,7 @@
       <div class="modal-name">
         <h2 class="modal-name-title">Ваше имя:</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="modal-name-field" placeholder="Введите имя" type="text" required>
+          <input class="modal-name-field" placeholder="Введите имя" type="text" name="modal-field-name" required>
           <svg class="modal-name-icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" fill="#B3B3B3"/></svg>
         </form>
           <p class="modal-name-error">Добавьте имя</p>
@@ -302,7 +304,7 @@
       <div class="modal-email">
         <h2 class="modal-email-title">Ваш e-mail:</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="modal-email-field" placeholder="почта" type="email" required>
+          <input class="modal-email-field" placeholder="почта" type="email" name="modal-field-email" required>
           <svg class="modal-email-icon" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.6 8c-.4 0-.6-.1-1-.3L0 4v7c0 .6.4 1 .9 1h13.2c.6 0 .9-.4.9-1V4L8.5 7.7l-.9.3Zm6.5-8H.9C.4 0 0 .5 0 1v.8L7.5 6 15 1.8V1c0-.5-.4-1-.9-1Z" fill="#B3B3B3"/></svg>
         </form>
           <p class="modal-email-error">Забавный у вас адрес</p>
@@ -312,7 +314,7 @@
       <div class="modal-thing">
         <h2 class="modal-thing-title">Что нужно привезти:</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="modal-thing-field" placeholder="В свободной форме" type="text" required>
+          <input class="modal-thing-field" placeholder="В свободной форме" type="text" name="modal-field-thing" required>
         </form>
       </div>
       <div class="modal-quantity">
@@ -322,7 +324,7 @@
           <svg class="tooltip-icon" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H0l7-6 7 6Z" fill="#000"/></svg>
           <p class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
         </div>
-        <input class="range-modal-input" type="number" value="1" readonly>
+        <input class="range-modal-input" type="number" value="1" name="modal-field-range" readonly>
         <svg class="minus-icon" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 0H0v2h16V0Z" fill="#000"/></svg>
         <svg class="plus-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000"/></svg>
       </div>

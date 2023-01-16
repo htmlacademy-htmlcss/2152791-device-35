@@ -17,7 +17,7 @@
          <div class="header-upper-container">
          <div class="form-button-container">
            <form class="search-field" action="https://echo.htmlacademy.ru/" method="get">
-             <input class="field" placeholder="Поиск по сайту" type="search" required>
+             <input class="field" placeholder="Поиск по сайту" type="search" name="catalog-search-field" required>
              <button class="search-button" type="submit">Найти</button>
            </form>
            <button class="login-button-catalog" type="button"><svg class="enter-icon-catalog" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" fill="#000"/></svg>Коля Петухов</button>
@@ -64,6 +64,7 @@
    <section class="catalog-filter">
     <div class="catalog-filter-container">
       <h2 class="filter-title">Фильтр:</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="range-price">
         <fieldset class="catalog-filter-container">
           <legend class="catalog-filter-title-priсe">Стоимость</legend>
@@ -73,9 +74,9 @@
             <div class="price-range-circus-two"></div>
             <div class="price-range-line-one"></div>
             <div class="price-range-line-two"></div>
-            <label class="min-price-label" for="min-prise">от</label>
+            <label class="min-price-label" id="min-prise">от</label>
             <input class="range-input" type="number" value="0" name="min-price" readonly>
-            <label class="max-price-label" for="max-prise">до</label>
+            <label class="max-price-label" id="max-prise">до</label>
             <input class="range-input" type="number" value="5000" name="max-price" readonly>
           </div>
         </fieldset>
@@ -135,8 +136,9 @@
           </label>
         </li>
       </ul>
+      <button class="show-button" type="submit">Показать</button>
+    </form>
     </div>
-    <button class="show-button" type="button">Показать</button>
    </section>
    <section class="catalog-main">
     <div class="sort-container">
@@ -154,7 +156,7 @@
         <li class="catalog-card">
           <a class="catalog-card-link" href="#">
             <img src="images/catalog/product-one.png" width="360" height="380" alt="Любительская селфи-палка.">
-            <a class="detail-card-link" href="#">Подробнее</a>
+            <span class="detail-card-link">Подробнее</span>
             <div class="catalog-card-description">
             <h3 class="catalog-card-title">Любительская селфи-палка</h3>
             <p class="catalog-card-prise">500 ₽</p>
@@ -164,7 +166,7 @@
         <li class="catalog-card">
           <a class="catalog-card-link" href="#">
             <img src="images/catalog/product-two.png" width="360" height="380" alt="Профессиональная селфи-палка.">
-            <a class="detail-card-link" href="#">Подробнее</a>
+            <span class="detail-card-link">Подробнее</span>
             <div class="catalog-card-description">
             <h3 class="catalog-card-title">Профессиональная селфи-палка</h3>
             <p class="catalog-card-prise">1500 ₽</p>
@@ -174,7 +176,7 @@
         <li class="catalog-card">
           <a class="catalog-card-link" href="#">
             <img src="images/catalog/product-three.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
-            <a class="detail-card-link" href="#">Подробнее</a>
+            <span class="detail-card-link">Подробнее</span>
             <div class="catalog-card-description">
             <h3 class="catalog-card-title">Непотопляемая селфи-палка</h3>
             <p class="catalog-card-prise">2500 ₽</p>
@@ -184,7 +186,7 @@
         <li class="catalog-card">
           <a class="catalog-card-link" href="#">
             <img src="images/catalog/product-four.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
-            <a class="detail-card-link" href="#">Подробнее</a>
+            <span class="detail-card-link">Подробнее</span>
             <div class="catalog-card-description">
             <h3 class="catalog-card-title">Селфи-палка «Следуй за мной»</h3>
             <p class="catalog-card-prise">1500 ₽</p>
