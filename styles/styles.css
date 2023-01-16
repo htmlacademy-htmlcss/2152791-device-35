@@ -123,6 +123,10 @@ body {
   padding-left: 48px;
 }
 
+.field-container {
+  cursor: pointer;
+}
+
 .field-container::before {
   content: "";
   position: absolute;
@@ -134,7 +138,7 @@ body {
   display: none;
 }
 
-.field:focus .field-container::before {
+.field-container:focus::before {
   display: block;
 }
 
@@ -169,7 +173,7 @@ body {
   display: none;
 }
 
-.search-button:focus .search-button-container::before {
+.search-button-container:focus::before {
   display: block;
 }
 
@@ -984,7 +988,7 @@ body {
   color: #000000;
   letter-spacing: 4px;
   border: none;
-  padding: 9px 120px 11px 22px;
+  padding: 9px 135px 11px 22px;
   position: relative;
   z-index: 1;
   cursor: pointer;
@@ -1028,7 +1032,7 @@ body {
   text-transform: uppercase;
   border: none;
   margin-top: 45px;
-  padding: 9px 134px 11px 35px;
+  padding: 9px 145px 11px 35px;
   position: relative;
   z-index: 1;
   cursor: pointer;
